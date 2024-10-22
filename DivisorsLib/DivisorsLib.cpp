@@ -8,6 +8,12 @@ std::vector<unsigned long long> divisors(unsigned long long number)
 	{
 		if (number % i == 0)
 			result.push_back(i);
+	
+		if (i != number / i) {
+			result.push_back(number / i);
+		}
+	
+	
 	}
 	return result;
 }
